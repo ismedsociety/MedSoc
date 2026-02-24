@@ -1,0 +1,12 @@
+
+#main-hero {
+    background: url("/images/main.png") no-repeat center;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    height: 80vh;
+}

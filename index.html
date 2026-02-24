@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Medical Society - Home</title>
+
+        <link rel="icon" href="images/icon.png" type="image/png">
+
+        <link rel="stylesheet" href="styles/form.css">
+        <link rel="stylesheet" href="styles/main.css">
+        <link rel="stylesheet" href="styles/pages/index.css">
+    </head>
+    <body>
+        <header>
+            <nav>
+                <a href="index.html" class="active">Home</a>
+                <a>Programs</a>
+                <a>Resources</a>
+                <a href="about.html">About</a>
+                <a href="news.html">News</a>
+            </nav>
+        </header>
+
+        <main>
+            <section id="main-hero">
+                <h2>Medical Society</h2>
+            </section>
+            <section>
+                <div>
+                    <p>Discover interests</p>
+                </div>
+            </section>
+        </main>
+    
+        <footer>
+            <div style="flex-grow: 2;">
+                <h3>Medical Society</h3>
+                <p>medsocimsa@gmail.com</p>
+                <p>© 2024 IMSA Medical Society<br>Crafted with ❤️</p>
+            </div>
+
+            <div style="flex-grow: 3;">
+                
+                <section id="contact-form" class="section-container form-section" aria-label="Contact form">
+                    <div class="form-container">
+                        <form action="#" method="post" novalidate>
+                            <h3>Contact</h3>
+                            <label for="name">Name <span class="required-star">*</span></label>
+                            <input id="name" name="name" type="text" placeholder="Name" required autofocus />
+                            
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" placeholder="Message" required></textarea>
+
+                            <label for="email">Email <span class="required-star">*</span></label>
+                            <input id="email" name="email" type="email" placeholder="you@example.com" required />
+
+
+                            <fieldset>
+                                <legend>Subscribe to newsletter?</legend>
+                                <div>
+                                    <input type="radio" id="subscribeYes" name="subscribe" value="yes" required />
+                                    <label for="subscribeYes">Yes</label>
+                                </div>
+                                <div>
+                                    <input type="radio" id="subscribeNo" name="subscribe" value="no" checked />
+                                    <label for="subscribeNo">No</label>
+                                </div>
+                            </fieldset>
+
+                            <div class="form-actions">
+                            <button type="submit">Submit</button>
+                            </div>
+                        </form>
+                    </div>
+                </section>
+
+            </div>
+        </footer>
+    </body>
+</html>
