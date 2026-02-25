@@ -12,18 +12,6 @@ h1, h2, h3 {
     font-family: Baskerville, "Baskerville Old Face", "Goudy Old Style", Garamond, "Times New Roman", serif;
 }
 
-h1 {
-    font-size: 4.5rem;
-}
-
-h2 {
-    font-size: 4rem;
-}
-
-h3 {
-    font-size: 2rem;
-}
-
 header {
     width: calc(100% - 2rem);
 
