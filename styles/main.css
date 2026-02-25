@@ -48,9 +48,3 @@ nav > a.active {
     text-decoration: underline;
     color: rgb(35, 127, 255);
 }
-
-main {
-    padding: 1rem 1rem;
-    color: white;
-    background: black;
-}

@@ -9,13 +9,41 @@
     align-items: center;
 
     height: 70vh;
-
-    border-top-left-radius: 100px;
-    border-bottom-right-radius: 100px;
 }
 
 #main-hero h1 {
     font-size: 3rem;
     color: white;
     margin: 0;
+}
+
+#three-columns {
+    color: black;
+    display: flex;
+    gap: 40px;
+    padding: 2rem;
+    justify-content: center;
+}
+
+#three-columns > div {
+    flex: 1;
+    max-width: 300px;
+    text-align: center;;
+}
+
+#three-columns > div p {
+    font-size: 1.5em;
+    font-family: Baskerville, "Baskerville Old Face", "Goudy Old Style", Garamond, "Times New Roman", serif;
+}
+
+#three-columns > div a {
+    border: 1px solid black;
+    text-decoration: none;
+    color: black;
+    padding: 0.5em;
+}
+
+#three-columns > div a:hover {
+    background: black;
+    color: white;
 }
