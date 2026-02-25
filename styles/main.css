@@ -65,3 +65,7 @@ nav > a.active {
     text-decoration: underline;
     color: rgb(35, 127, 255);
 }
+
+main {
+    color: black;
+}

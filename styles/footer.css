@@ -89,13 +89,13 @@ input, textarea {
     color: white;
     padding: 8px 0;
     outline: none;
-    transition: 0.3s ease;
+    transition: border 0.3s ease;
 }
 
 /* Orange Hover */
 input:hover, 
 textarea:hover {
-    border-bottom-color: orange;
+    border-bottom-color:rgb(35, 127, 255);
 }
 
 /* Submit Section */
@@ -110,11 +110,11 @@ button {
     color: white;
     padding: 12px 50px;
     cursor: pointer;
-    transition: 0.3s;
+    transition: 0.3s ease;
 }
 
 /* Button Hover */
 button:hover {
-    border-color: orange;
-    color: orange;
+    border-color:rgb(35, 127, 255);
+    color:rgb(35, 127, 255);
 }

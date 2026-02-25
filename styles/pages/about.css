@@ -1,0 +1,48 @@
+
+#main-hero {
+    background: url("/images/main.png") no-repeat center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    height: 70vh;
+}
+
+#main-hero h1 {
+    font-size: 3rem;
+    color: white;
+    margin: 0;
+}
+
+#board-container {
+    display: flex;
+    flex-direction: column;
+
+    text-align: center;
+
+    margin: 2rem;
+}
+
+#board {
+    display: flex;
+    flex-direction: row;
+
+    overflow-x: scroll;
+}
+
+#board div {
+    width: 20%;
+    margin: 1rem;
+}
+
+#board img {
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+}
+
+#board p {
+    font-style: italic;
+}
