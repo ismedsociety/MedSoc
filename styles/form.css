@@ -1,4 +1,8 @@
 
+.image-link a img {
+    width: 35px;
+}
+
 textarea, input {
     font-family: inherit;
     font-size: inherit;
@@ -59,11 +63,6 @@ textarea, input {
     gap: 80px;
 }
 
-/* Left Content */
-.footer-left {
-    flex: 1;
-}
-
 .social-icons {
     margin-bottom: 25px;
 }
@@ -89,11 +88,6 @@ textarea, input {
 .legal-info {
     font-size: 0.85rem;
     line-height: 1.6;
-}
-
-/* Right Content */
-.footer-right {
-    flex: 2;
 }
 
 .form-heading {
