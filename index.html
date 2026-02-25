@@ -7,7 +7,7 @@
 
         <link rel="icon" href="images/icon.png" type="image/png">
 
-        <link rel="stylesheet" href="styles/form.css">
+        <link rel="stylesheet" href="styles/footer.css">
         <link rel="stylesheet" href="styles/main.css">
         <link rel="stylesheet" href="styles/pages/index.css">
     </head>
@@ -58,19 +58,21 @@
                     <p class="brand-email">medsocimsa@gmail.com</p>
                     
                     <div class="legal-info">
-                        <p>&copy; 2024 IMSA Medical Society</p>
-                        <p>Crafted with ❤️</p>
+                        <p>
+                            &copy; 2024 IMSA Medical Society<br>
+                            Crafted with ❤️
+                        </p>
                     </div>
                 </div>
 
                 <div class="footer-right">
                     <h2 class="form-heading">Contact</h2>
-                    <p class="form-subheading">Have Questions? Reach Out to Us</p>
+                    <p class="form-subheading">Have questions? Reach out to us:</p>
 
-                    <form class="contact-form">
+                    <form action="https://formsubmit.co/medsocimsa@gmail.com" method="post">
                         <div class="form-row">
                             <div class="field-group">
-                                <label>Full Name</label>
+                                <label>Name *</label>
                                 <input type="text" required>
                             </div>
                             <div class="field-group">
@@ -80,7 +82,7 @@
                         </div>
 
                         <div class="field-group full-width">
-                            <label>Leave Us a Message...</label>
+                            <label>Message *</label>
                             <textarea style="resize: none;" rows="3" required></textarea>
                         </div>
 
@@ -92,5 +94,7 @@
                 
             </div>
         </footer>
+
+        <script src="scripts/header.js"></script>
     </body>
 </html>

@@ -1,6 +1,6 @@
 
 #main-hero {
-    background: url("/images/main.png") no-repeat center;
+    background: url("/images/main2.png") no-repeat center;
     background-size: cover;
 
     display: flex;
@@ -23,6 +23,7 @@
     gap: 40px;
     padding: 2rem;
     justify-content: center;
+    margin-bottom: 2rem;
 }
 
 #three-columns > div {

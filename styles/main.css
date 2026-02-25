@@ -1,8 +1,14 @@
 
+:root {
+    --reg-font: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --fancy-font: "Playfair Display", Baskerville, "Baskerville Old Face", "Goudy Old Style", Garamond, "Times New Roman", serif;
+}
+
 html, body {
     margin: 0;
     padding: 0;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-top: 2em;
+    font-family: var(--reg-font);
     background: #fff;
     color: #fff;
     font-size: 20px;
@@ -10,20 +16,31 @@ html, body {
 
 
 h1, h2, h3 {
-    font-family: Baskerville, "Baskerville Old Face", "Goudy Old Style", Garamond, "Times New Roman", serif;
+    font-weight: normal;
+    font-family: var(--fancy-font);
 }
 
 header {
+    position: fixed;
+    top: 0;
+    left: 0;
+
     width: calc(100% - 2rem);
 
     background: #ffffff;
 
     padding: 1rem;
-    z-index: 1000;
 
     display: flex;
     flex-direction: row;
     justify-content: center;
+
+    box-shadow: 0px 0px 10px rgb(0, 0, 0);
+    transition: box-shadow 200ms;
+}
+
+header.docked {
+    box-shadow: 0px 0px 0px rgb(0, 0, 0);
 }
 
 nav {
