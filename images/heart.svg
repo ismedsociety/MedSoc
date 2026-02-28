@@ -1,0 +1,12 @@
+<svg version="1.1" viewBox="0.0 0.0 50.0 50.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+    <symbol id="icon" viewBox="0.0 0.0 50.0 50.0">
+        <clipPath id="p.0">
+            <path d="m0 0l50.0 0l0 50.0l-50.0 0l0 -50.0z" clip-rule="nonzero"/>
+        </clipPath>
+        <g clip-path="url(#p.0)">
+            <path fill-opacity="0.0" d="m0 0l50.0 0l0 50.0l-50.0 0z" fill-rule="evenodd"/>
+            <path d="m25.0 16.519686c7.5853004 -19.309711 37.16798 0 0 24.826773c-37.16798 -24.826773 -7.5853024 -44.136486 0 -24.826773z" fill-rule="evenodd"/>
+            <path fill="currentColor" stroke="#4a86e8" stroke-width="4.0" stroke-linejoin="round" stroke-linecap="butt" d="m25.0 16.519686c7.5853004 -19.309711 37.16798 0 0 24.826773c-37.16798 -24.826773 -7.5853024 -44.136486 0 -24.826773z" fill-rule="evenodd"/>
+        </g>
+    </symbol>
+</svg>

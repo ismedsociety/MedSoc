@@ -1,0 +1,71 @@
+
+#main-hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding-top: 70px;
+}
+
+#two-cols {
+    display: flex;
+    gap: 30px;
+    
+    width: calc(100% - 4rem);
+
+    padding: 2rem;
+}
+
+#two-cols > div {
+    background: linear-gradient(rgba(201, 180, 255, 0.328), transparent, transparent);
+    padding: 30px;
+    border-radius: 20px;
+}
+
+#feed > div {
+    background: white;
+    padding: 10px 33px 10px 33px;
+    border-radius: 20px;
+}
+
+.two-imgs {
+    display: flex;
+    justify-content: space-between;
+}
+
+.two-imgs img {
+    width: calc(50% - 5px);
+    display: inline-block;
+    border-radius: 10px;
+}
+
+.postcontrols {
+    padding-top: 10px;
+    display: flex;
+    gap: 10px;
+}
+
+.postcontrols button {
+    color: white;
+    padding: 10px;
+    border: none;
+    background: none;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+}
+
+.postcontrols button svg {
+    width: 30px;
+    height: 30px;
+    transition: transform 100ms;
+}
+
+.postcontrols button:hover svg {
+    transform: scale(1.25);
+}
+
+svg[data-liked="true"] {
+    color: #4a86e8;
+}

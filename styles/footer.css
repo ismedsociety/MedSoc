@@ -104,7 +104,7 @@ textarea:hover {
     justify-content: flex-end;
 }
 
-button {
+.site-footer button {
     background: transparent;
     border: 1px solid white;
     color: white;
@@ -114,7 +114,7 @@ button {
 }
 
 /* Button Hover */
-button:hover {
+.site-footer button:hover {
     border-color:rgb(35, 127, 255);
     color:rgb(35, 127, 255);
 }
