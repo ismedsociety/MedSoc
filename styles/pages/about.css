@@ -5,7 +5,7 @@
     background-size: cover;
     background-image: 
         linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.3), rgba(50, 62, 113, 0.4)),
-        url("./images/main.png");
+        url("/images/main.png");
 
     display: flex;
     flex-direction: column;
