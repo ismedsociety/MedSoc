@@ -69,3 +69,9 @@ nav > a.active {
 main {
     color: black;
 }
+
+@media screen and (max-width: 800px) {
+    html, body {
+        font-size: inherit;
+    }
+}

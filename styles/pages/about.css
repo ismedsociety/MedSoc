@@ -33,8 +33,6 @@
 #board {
     display: flex;
     flex-direction: row;
-
-    overflow-x: hidden;
 }
 
 #board div {
@@ -50,4 +48,33 @@
 
 #board p {
     font-style: italic;
+}
+
+@media screen and (max-width: 1200px) {
+    #board {
+        flex-wrap: wrap;
+    }
+    #board div {
+        width: 29%;
+        margin: auto;
+    }
+    #board img {
+        width: 70%;
+        aspect-ratio: 1/1;
+        object-fit: cover;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    #board {
+        flex-direction: column;
+    }
+    #board div {
+        width: unset;
+    }
+    #board img {
+        width: 70%;
+        aspect-ratio: 1/1;
+        object-fit: cover;
+    }
 }

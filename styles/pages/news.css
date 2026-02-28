@@ -69,3 +69,19 @@
 svg[data-liked="true"] {
     color: #4a86e8;
 }
+
+@media screen and (max-width: 1000px) {
+    #two-cols {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .two-imgs {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .two-imgs img {
+        width: unset;
+    }
+}

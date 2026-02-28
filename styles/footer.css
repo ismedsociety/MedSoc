@@ -118,3 +118,10 @@ textarea:hover {
     border-color:rgb(35, 127, 255);
     color:rgb(35, 127, 255);
 }
+
+@media screen and (max-width: 900px) {
+    .footer-container {
+        flex-direction: column;
+        gap: 30px;
+    }
+}
