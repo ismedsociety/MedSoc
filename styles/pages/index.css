@@ -1,6 +1,6 @@
 
 #main-hero {
-    background: url("/images/main2.png") no-repeat center;
+    background: url("./images/main2.png") no-repeat center;
     background-size: cover;
 
     display: flex;
