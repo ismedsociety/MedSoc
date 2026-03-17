@@ -22,6 +22,7 @@ h1, h2, h3 {
 
 header {
     position: fixed;
+    z-index: 999;
     top: 0;
     left: 0;
 
@@ -52,6 +53,10 @@ nav {
     padding: 0.5rem;
 }
 
+a {
+    color: rgb(10, 69, 151);
+}
+
 nav > a {
     color: #000000;
     text-decoration: none;
@@ -73,5 +78,19 @@ main {
 @media screen and (max-width: 800px) {
     html, body {
         font-size: inherit;
+    }
+}
+
+@keyframes fadeup {
+    0% {
+        opacity: 0;
+        transform: translateY(50px) rotateX(80deg);
+    }
+    70% {
+        transform: translateY(0px) rotateX(0deg);
+    }
+    100% {
+        
+        opacity: 1;
     }
 }

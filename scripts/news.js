@@ -13,28 +13,54 @@ const news = [
 // id must be unique
 const posts = [
     {
-        "title": "February",
-        "type": "news",
+        "title": "Suturing Event",
+        "id": "suture",
+        "sections": [
+            {
+                "type": "text",
+                "text": "Come to Medical Society's suturing event, happening on March 10th from 5-6 P.M. "
+            }
+        ]
+    },
+    {
+        "title": "February Newsletter",
         "id": "feb",
-        "imgtype": "jpg"
+        "sections": [
+            {
+                "type": "news",
+                "imgtype": "jpg"
+            }
+        ]
     },
     {
-        "title": "December",
-        "type": "news",
+        "title": "December Newsletter",
         "id": "dec",
-        "imgtype": "jpg"
+        "sections": [
+            {
+                "type": "news",
+                "imgtype": "jpg"
+            }
+        ]
     },
     {
-        "title": "November",
-        "type": "news",
+        "title": "November Newsletter",
         "id": "nov",
-        "imgtype": "jpg"
+        "sections": [
+            {
+                "type": "news",
+                "imgtype": "jpg"
+            }
+        ]
     },
     {
-        "title": "October",
-        "type": "news",
+        "title": "October Newsletter",
         "id": "oct",
-        "imgtype": "jpg"
+        "sections": [
+            {
+                "type": "news",
+                "imgtype": "jpg"
+            }
+        ]
     }
 ];
 
@@ -45,23 +71,29 @@ for (let i = 0; i < news.length; i++) {
 for (let i = 0; i < posts.length; i++) {
     const post = posts[i];
 
-    newscontainer.innerHTML += `<div>`;
-    switch (post.type) {
-        case "news":
-            newscontainer.innerHTML += `
-                <h3>${post.title} Newsletter</h3>
-                <div class=\"two-imgs\">
-                    <img src=\"images/news/${post.id}/1.${post.imgtype}\">
-                    <img src=\"images/news/${post.id}/2.${post.imgtype}\">
-                </div>`;
-            break;
-        case "text":
-            newscontainer.innerHTML += `
-                <h3>${post.title}</h3>
-                <p>${post.text}</p>
-            `;
-            break;
+    newscontainer.innerHTML += `<div><h3>${post.title}</h3>`;
+
+    for (let j = 0; j < post.sections.length; j++) {
+        const section = post.sections[j];
+
+        switch (section.type) {
+            case "news":
+                newscontainer.innerHTML += `
+                    <div class=\"two-imgs\">
+                        <img src=\"images/news/${post.id}/1.${section.imgtype}\">
+                        <img src=\"images/news/${post.id}/2.${section.imgtype}\">
+                    </div>`;
+                break;
+            case "text":
+                newscontainer.innerHTML += `
+                    <p>${section.text}</p>
+                `;
+                break;
+        }
+
+        newscontainer.innerHTML += "<br>";
     }
+    
     newscontainer.innerHTML += `
     <div class=\"postcontrols\">
         <button onclick=\"likePost(\'${post.id}\')\"><svg id=\"${post.id}svg\"><use href="images/heart.svg#icon"></use></svg></button>

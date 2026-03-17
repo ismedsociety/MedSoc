@@ -12,6 +12,7 @@
 }
 
 #main-hero h1 {
+    animation: ease-out forwards fadeup 500ms;
     font-size: 3rem;
     color: white;
     margin: 0;

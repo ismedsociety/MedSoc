@@ -8,6 +8,10 @@
     padding-top: 70px;
 }
 
+#main-hero h1 {
+    animation: ease-out forwards fadeup 500ms;
+}
+
 #two-cols {
     display: flex;
     gap: 30px;

@@ -16,6 +16,7 @@
 }
 
 #main-hero h1 {
+    animation: ease-out forwards fadeup 500ms;
     font-size: 3rem;
     color: white;
     margin: 0;
@@ -50,6 +51,11 @@
     font-style: italic;
 }
 
+#committees {
+    display: flex;
+    justify-content: space-evenly;
+}
+
 @media screen and (max-width: 1200px) {
     #board {
         flex-wrap: wrap;
@@ -62,6 +68,13 @@
         width: 70%;
         aspect-ratio: 1/1;
         object-fit: cover;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    #committees {
+        flex-direction: column;
+        align-items: center;
     }
 }
 
